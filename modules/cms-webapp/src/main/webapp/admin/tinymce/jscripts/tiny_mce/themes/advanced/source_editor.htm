@@ -1,0 +1,69 @@
+<!doctype html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>{#advanced_dlg.code_title}</title>
+
+    <link rel="stylesheet" href="../../../../../codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="../../../../../css/admin.css"/>
+    <link rel="stylesheet" href="../../../../../javascript/cms/ui/codearea/codearea.css"/>
+
+    <script type="text/javascript" src="../../../../../codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="../../../../../codemirror/addon/selection/active-line.js"></script>
+    <script type="text/javascript" src="../../../../../codemirror/addon/fold/xml-fold.js">//</script>
+    <script type="text/javascript" src="../../../../../codemirror/addon/edit/matchtags.js">//</script>
+    <script type="text/javascript" src="../../../../../codemirror/addon/edit/closetag.js">//</script>
+    <script type="text/javascript" src="../../../../../codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="../../../../../codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="../../../../../codemirror/mode/css/css.js"></script>
+    <script type="text/javascript" src="../../../../../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script type="text/javascript" src="../../../../../javascript/cms/ui/codearea/codearea.js">//</script>
+
+    <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+
+    <script type="text/javascript" src="js/source_editor.js"></script>
+
+    <style type="text/css">
+        .CodeMirror {
+            width: 100%;
+            height: 450px;
+        }
+
+        body, table td {
+            padding: 0;
+            margin: 0;
+        }
+
+        .code-area-container {
+            width: 100%;
+        }
+
+        .mceActionPanel {
+            padding: 10px 10px;
+        }
+    </style>
+
+    <base target="_self" />
+</head>
+<body>
+<form name="source" onsubmit="SourceEditor.saveContent();return false;" action="#">
+    <table class="code-area-container" border="0">
+        <tr>
+            <td class="code-area-document-container">
+                <textarea name="htmlSource" id="htmlSource"><!-- --></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <div class="mceActionPanel">
+        <div style="float: left">
+            <input type="submit" name="insert" value="{#update}" id="insert"/>
+        </div>
+
+        <div style="float: right">
+            <input type="button" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" id="cancel"/>
+        </div>
+    </div>
+</form>
+</body>
+</html>

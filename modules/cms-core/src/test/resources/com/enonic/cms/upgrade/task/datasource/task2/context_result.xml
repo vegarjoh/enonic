@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<datasources result-element="result">
+  <datasource name="getCookieContext" result-element="context"/>
+  <datasource name="getHttpContext" result-element="context"/>
+  <datasource name="getSessionContext" result-element="context"/>
+  <datasource name="getLocales"/>
+</datasources>

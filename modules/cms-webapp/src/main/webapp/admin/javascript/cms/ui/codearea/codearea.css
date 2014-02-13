@@ -1,0 +1,17 @@
+.CodeMirror {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 13px;
+}
+
+.CodeMirror-linenumbers {
+    background-color: #eee;
+}
+
+.CodeMirror-activeline-background {
+    background: #e8f2ff !important;
+}
+
+.CodeMirror-matchingtag {
+    background: rgba(255, 150, 0, .3);
+}
