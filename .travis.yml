@@ -1,3 +1,10 @@
 language: java
 jdk:
-  - oraclejdk7
+- oraclejdk7
+deploy:
+  provider: heroku
+  api_key:
+    secure: OoD5/wQcreZkqvbERhyVmCFxRZAgAxGdXeVLqxJ9VKcQW1yMnrTf9P69LN5UK15yp914Xjwz9Ku9r6BX/NMZivRB0k6HyuKMOPR6ViT8YHUNiVUthtun2LwU/HgVpSVIn+jLdwmYo/4TvqEJBOPWtyVs5/cff6uJea5FjWjQezY=
+  app: enonic
+  on:
+    repo: vegarjoh/enonic
